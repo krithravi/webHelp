@@ -1,3 +1,13 @@
+/*:root {
+   --red: 255, 113, 91;
+   --yellow: 249, 203, 64;
+   --dark: 76, 91, 92;
+   --medium: 147, 168, 172;
+   --light: 225, 231, 232;
+   --blue: 47, 82, 224;
+   --green: 64, 249, 111;
+   --black: 29,34,34;
+}*/
 h1 {
 	/* color: #497013; */
 	color: white;
@@ -33,31 +43,24 @@ p {
   border: 3px solid #73AD21;
   padding: 10px;
 }
-.box1 {
-	float:left;
-  margin: 0px 300px 300px 870px;
-  width: 20%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
-.frog {
-	background: #466120;
-	margin: 40px 40px 40px 40px;
-	float:left;
-	width: 20%;
-	border: 2px solid #73AD21;
-	padding 10px;
-}
-.frog1 {
-	background: #466120;
-	margin: auto;
-	/* margin: 40px 40px 40px 40px;
-	float:left; */
-	width: 20%;
-	border: 2px solid #73AD21;
-	padding 10px;
+code.inline {
+   background: #c3e396;
+   color: #283812;
+   padding: 0.1em;
+   border-radius: 0.3em;
+	font-family: "Courier New", Courier, monospace;
 }
 
+span.a {
+  display: inline; /* the default for span */
+  color:#f4fbea;
+  padding: 0.1em;
+  background-color: #466120;
+  border-radius: 0.3em;
+  font-family: "Courier New", Courier, monospace;
+
+
+}
 header {
 	background-color: #466120;
 
@@ -72,9 +75,19 @@ body {
 	background: #e6f5d0;
 }
 
+.realcode {
+			background-color: #f4fbea;
+			border: 1px solid #73AD21;
+			display: block;
+			padding: 10px;
+			font-family: "Courier New", Courier, monospace;
+  			border-radius: 0.3em;
+		}
 * {
 	 font-family: "Montserrat", sans-serif;
-	 }
+	 line-height: 1.5;
+}
+
 /* Center website */
 .main {
   max-width: 1000px;
@@ -82,61 +95,3 @@ body {
 }
 
 
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 50px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
-img {
-	image-orientation: from-image;
-}
-
-.btn{
-	background: none;
-	border: none;
-	color: black;
-	padding: 10px 14px;
-	font-size: 20px;
-
-}
-
-.btn:hover{
-	cursor: pointer;
-}

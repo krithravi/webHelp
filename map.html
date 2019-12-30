@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" href="./style.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 </head>
 <title>KeyMaps</title>
 <body>
@@ -10,19 +12,46 @@
 	<hr>
 
 	<div class="box">
-		<h2>The Problem</h2>
-			The <kbd>Caps Lock</kbd> key serves mainly as a source of annoyance, and
-			no one really uses it. However, the <kbd>Esc</kbd> key is quite useful
-			(I'm primarily a Vim user), but is far too hard to reach.  Currently,
-			&Eacute;owyn has altered key settings to make life a bit eaiser. The
-			<kbd> Caps Lock</kbd> key now acts like the <kbd>Esc</kbd> key.
-		<h2>Stuff that didn't work</h2>
-			I first tried this using the command
-			<code>xmodmap -e `clear Lock' -e `keycode 0x42 = Escape'</code>
-			but for some reason, it stopped working for one of my <span
-	  class="roman">T</span><sub><span class="roman">E</span></sub><span
-									class="roman">X</span>&nbsp; files. 
-		<h2>The Solution</h2>
+		<h3>The Problem</h3>
+			The <code class="inline">Caps Lock</code> key serves mainly as a
+			source of annoyance, and receives far too much real estate relative
+			to its use.  However, the <code class="inline">Esc</code> key is
+			quite useful (I'm primarily a Vim user), but is far too hard to
+			reach.  Currently, &Eacute;owyn has altered key settings to make
+			life a bit easier. The <code class="inline"> Caps Lock</code> key
+			now acts like the <code class="inline">Esc</code> key.
+
+		<h3>Stuff that didn't work</h3>
+			I first tried this using the command <div class="realcode">xmodmap
+				-e `clear Lock' -e `keycode 0x42 = Escape'</div> but for some
+			reason, it stopped working for one of my <span class="roman">
+				T</span><sub><span class="roman">E</span></sub><span
+					   class="roman">X</span>&nbsp; files.
+
+
+		<h3>The Solution</h3>
+		<ol>
+			<li> I installed the <span class="a">dconf-editor</span> using <div
+							  class="realcode"> sudo apt-get install
+							  dconf-tools</div></li>
+			<li> I started the editor, and went to <span class="a">org</span> <i
+												class="fas
+												fa-chevron-right"></i> <span
+			class="a">gnome</span> <i class="fas fa-chevron-right"></i> <span
+							 class="a">desktop</span> <i class="fas
+							 fa-chevron-right"></i> <span
+									class="a">input-sources</span></li>
+			<li> Within these braces, I added <div class="realcode">
+					`caps:escape'</div> to add the <code class="inline">Caps
+					Lock </code> key as another <code class="inline">
+				Esc</code>.  The command you want to use needs to be enclosed in
+			single quotes.  If you want multiple options, they need to be comma
+			separated. A full list of commands can be found by typing <div
+									   class="realcode">man 7
+									   xkeyboard-config</div></li>
+			<li> Exit out, and you're good to go! </li>
+		</ol>
+		I still haven't done this in Pippin though.
 	</div>
 </body>
 </html>
