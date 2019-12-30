@@ -1,0 +1,142 @@
+h1 {
+	/* color: #497013; */
+	color: white;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 50px;
+	font-weight: 200;
+	word-break: break-all;
+}
+h2 {
+	color: white;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	font-weight: 150;
+	word-break: break-all;
+}
+h3 {
+	color: #497013;
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	font-weight: 150;
+	word-break: break-all;
+}
+p {
+	font-family: "Roboto", sans-serif;
+}
+
+.box {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.box1 {
+	float:left;
+  margin: 0px 300px 300px 870px;
+  width: 20%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.frog {
+	background: #466120;
+	margin: 40px 40px 40px 40px;
+	float:left;
+	width: 20%;
+	border: 2px solid #73AD21;
+	padding 10px;
+}
+.frog1 {
+	background: #466120;
+	margin: auto;
+	/* margin: 40px 40px 40px 40px;
+	float:left; */
+	width: 20%;
+	border: 2px solid #73AD21;
+	padding 10px;
+}
+
+header {
+	background-color: #466120;
+
+	padding: 30px;
+}
+a:link {
+	color: #73AD21;
+	text-decoration: none;
+}
+
+body {
+	background: #e6f5d0;
+}
+
+* {
+	 font-family: "Montserrat", sans-serif;
+	 }
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 50px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+img {
+	image-orientation: from-image;
+}
+
+.btn{
+	background: none;
+	border: none;
+	color: black;
+	padding: 10px 14px;
+	font-size: 20px;
+
+}
+
+.btn:hover{
+	cursor: pointer;
+}
