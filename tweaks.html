@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+<title>Diacritics</title>
+<body>
+	<header><button class="button" onclick="window.location.href='index.html'">
+			<i class="fa fa-home"></i></button><h1>Accent Marks </h1></header>
+	<hr>
+
+	<div class="box">
+		<h3>The Problem</h3>
+		I needed to be able to type diacritics with my keyboard on &Eacute;owyn.
+		I installed the "English (intl., with AltGr dead keys)" keyboard, but
+		when I typed in the correct key bindings, such as <code
+	  	class="inline">AltGr</code>+<code class="inline">a</code>, the character
+		"&aacute;" was not produced. 
+
+		<h3>The Solution</h3>
+		The issue was that the <code class="inline">Compose</code> key was not set. Hence,
+		I had to set the <code class="inline">Compose</code> key to the 
+		<code class="inline">AltGr</code> key.
+		<br><br>
+		I did this by installing the <span class="a">gnome-tweaks</span> utility with 
+		<span class="b">sudo apt install gnome-tweak-tool</span> and ran it with 
+		<span class="b">gnome-tweaks</span>. In Tweaks, 
+		I went to <span class="a">Keyboard & Mouse</span> <i class="fas fa-chevron-right"></i> 
+		<span class="a">Compose Key</span>. The default is set to <span class="b">off</span>,
+		but you can toggle that switch and pick the key you want. I went with 
+		<code class="inline">AltGr</code>, since that was wwhat the keyboard I downloaded said to use.
+		<h3>Additional Fun Stuff</h3>
+		You can do a lot of other cool things with Tweaks - you can customize how pretty much 
+		everything looks. You can change the fonts the OS uses, what format the time
+		should be printed in, pick which apps should be launched at boot up, and so much more.
+
+	</div>
+</body>
+</html>
