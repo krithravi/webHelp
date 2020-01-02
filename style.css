@@ -47,6 +47,24 @@ p {
     border-radius: 1em;
 }
 
+.lbox {
+    margin-left: 25%;
+	margin-bottom:20px;
+    width: 25%;
+	float: left;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    border-radius: 1em;
+}
+.rbox {
+    margin-right: 25%;
+    width: 21%;
+	float: right;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    border-radius: 1em;
+}
+
 code.inline {
     background: #c3e396;
     color: #283812;
