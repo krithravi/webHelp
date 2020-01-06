@@ -41,29 +41,32 @@ p {
 
 .box {
     margin: auto;
-    width: 50%;
+    width: 51%;
     border: 3px solid #73AD21;
     padding: 10px;
     border-radius: 1em;
 }
 
-.lbox {
-    margin-left: 25%;
-	margin-bottom:20px;
-    width: 25%;
-	float: left;
-    border: 3px solid #73AD21;
-    padding: 10px;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    /*background-color: #73AD21;*/
+    padding: 3px;
+    margin-left: 24%;
+    margin-right: 24%;
     border-radius: 1em;
 }
-.rbox {
-    margin-right: 25%;
-    width: 21%;
-	float: right;
-    border: 3px solid #73AD21;
-    padding: 10px;
+
+.newbox {
+    text-align: left;
+    background-color: #e6f5d0;
+    padding: 10px 30px;
+    font-size: 18px;
     border-radius: 1em;
 }
+
 
 code.inline {
     background: #c3e396;
@@ -75,7 +78,6 @@ code.inline {
 
 span.a {
     display: inline;
-    /* the default for span */
     color: #f4fbea;
     padding: 0.1em;
     background-color: #466120;
