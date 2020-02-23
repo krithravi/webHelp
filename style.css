@@ -35,6 +35,14 @@ h4 {
     word-break: break-all;
 }
 
+h5 {
+    color: #497013;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    word-break: break-all;
+}
 p {
     font-family: "Roboto", sans-serif;
 }
@@ -70,19 +78,18 @@ p {
 .wrapper {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 15px;
   background-color: #e6f5d0;
   color: #444;
-  margin-left:25%;
-  margin-right:25%;
+  margin-left:15%;
+  margin-right:15%;
 }
 
 .actual-box {
   text-align: center;
-  background-color: #fff;
-  color: #fff;
-  border-radius: 20px;
-  padding: 20px;
+  background-color: #466120;
+  border-radius: 10px;
+  padding: 5px;
   font-size: 20px;
 }
 
@@ -116,7 +123,7 @@ header {
 }
 
 a:link {
-    color: #73AD21;
+    color: #8ec147;
     text-decoration: underline;
 
 }
@@ -134,16 +141,24 @@ body {
     border-radius: 0.3em;
 }
 
-.button {
-    background-color: #f4fbea;
+#home {
     border: none;
-    border-radius: 2em;
     font-size: 20px;
-    cursor: pointer;
 }
+#write {
+	border:none;
+	font-size: 20px;
+	padding: 7px;
+	background: #466120;
+	color:white;
 
+}
+.button {
+	border-radius: 2em;
+	cursor:pointer;
+}
 .button:hover {
-    background-color: #73AD21;
+	box-shadow: 0 10px 10px 0 #73AD21;
 }
 
 * {
